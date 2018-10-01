@@ -1,0 +1,928 @@
+*{
+    font-family: "Roboto";
+}
+
+main:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+body, ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+p, li, h1, h3, h4{
+    color: #4e4e4e;
+}
+
+body{
+    background: #f0f0f0;
+}
+
+a:hover{
+    background-image: linear-gradient(120deg, #fed442 0%, #fed442 100%);
+    background-repeat: no-repeat;
+    background-position: 0 70%;
+    transition: background-size 0.25s ease-in;
+    background-size: 100% 20%;
+}
+
+/* Header & Navigation Menu CSS*/
+.wrapper{
+    width: 100%;
+    max-width: 1200px;
+}
+
+header{
+    background: #fff;
+    padding: 20px 35px;
+}
+
+header h1{
+    margin: 0;
+    text-indent: -10000px;
+    background: url(images/logo.png) no-repeat;;
+    width: 140px;
+    float: left;
+}
+
+header nav{
+    float: right;
+}
+
+header nav h2{
+    line-height: 0;
+    margin: 0;
+    text-indent: -10000px;
+}
+
+header nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+header nav li{
+    list-style-type: none;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #4e4e4e;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+/* End of Header & Navigation Menu CSS*/
+
+/* Breadcrumb & Hover CSS */
+
+.additional-links:hover{
+    text-decoration: none;
+    background-image: none;
+}
+
+.current{
+    background-image: linear-gradient(120deg, #fed442 0%, #fed442 100%);
+    background-repeat: no-repeat;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+    background-size: 100% 40%;
+}
+
+.breadcrumb {  
+    line-height: 1.5; 
+    margin: 18px; 
+    padding-left: 0;
+}
+
+.breadcrumb li { 
+    display: inline; 
+    list-style-type: none; 
+    margin-left: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.breadcrumb li a { 
+    text-decoration: none;
+    color: #9d9d9d; 
+}
+
+.breadcrumb li:before {
+    color: #ffd145;
+    font-size: 10px; 
+    content: "\25BA"; 
+    padding: 0 15px; 
+}
+  
+.breadcrumb li:first-child:before { 
+    content: ""; 
+    padding-right: 0;
+}
+/*End of Breadcrumb & Hover CSS*/
+
+/*Main Sections, Sidebars and Product Tabs CSS*/
+
+.additional-sidebar {
+    width: 10%;
+    float: left;
+}
+
+.additional-sidebar section h1 {
+    text-transform: uppercase;
+    color: #fff;
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    transform: rotate(180deg);
+    letter-spacing: 15px;
+    font-size: 4em;
+}
+
+/* Navigation */
+
+.product-tabs {
+  width: 20%;
+  position: fixed;
+  float: left;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+.product-tabs ul {
+  list-style: none;
+  text-align: right;
+}
+.product-tabs ul li {
+  margin: 10% 0 10% 20%;
+}
+.product-tabs ul li a {
+  padding: 10px 0;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  color: #000;
+  font-weight: bold;
+}
+
+a.active {
+    background-image: linear-gradient(120deg, #fed442 0%, #fed442 100%);
+    background-repeat: no-repeat;
+    background-position: 0 70%;
+    transition: background-size 0.25s ease-in;
+    background-size: 100% 20%;
+}
+
+/* Sections */
+
+section {
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  margin-left: 12%;
+}
+
+.sections section {
+  margin-top: 60px;
+}
+section.active {}
+
+/* End of Main Sections, Sidebars and Product Tabs CSS*/
+
+/* Product Details CSS*/
+.image-holder {
+    margin-left: 20%;
+    width: 50%;
+    float: left;
+    background-color: #fff;
+}
+.product-details {
+    width: 25%;
+    float: left;
+    background-color: #fff;
+    padding: 2%;
+}
+
+.product-details h2{
+    font-size: 30px;
+    text-align: left;
+}
+
+.rating-box{
+    text-align: left;
+    color: #c1c1c1;
+}
+
+.rating{
+    padding-left: 5px;
+    color: #c1c1c1; 
+}
+
+.checked{
+    color: orange;
+}
+
+.price-box {
+    text-align: left;
+    padding: 6% 0;
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+}
+del {
+    color: #c1c1c1;
+    text-decoration: none;
+    position: relative;
+}
+
+del:before {
+  content: " ";
+  display: block;
+  width: 100%;
+  border-top: 2px solid #c1c1c1;
+  position: absolute;
+  top: 45%;
+  left: 0;
+}
+
+ins {
+    text-decoration: none;
+    padding: 1em 1em 1em .5em;
+    font-weight: bold;
+  }
+
+.additional-info{
+    text-align: left;
+    padding: 6% 0 4% 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.additional-info ul{
+    margin-left: 7%;
+}
+
+.additional-info ul li{
+    margin-bottom: 4%;
+}
+
+.additional-info ul li span{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.usp{
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 7% 0;
+}
+
+.usp ul{
+    list-style-type: none;
+}
+
+.usp ul li{
+    float: left;
+    width: 50%;
+}
+
+.usp ul li i{
+    background-color: #e5e5e5;
+    color: #000;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0 4%;
+    float: left;
+}
+
+/* Color Selector*/
+
+.color-selector {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 30% 0 25% 0;
+}
+
+.color-swatch div {
+    width: 25px;
+    height: 25px;
+    float: left;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    margin-right: 2%;
+  }
+  
+.selected:before {
+    content: '\2713';
+    color: #fff;
+    padding: 25%;
+    font-size: 16px;
+}
+/* End of Color Selector*/
+
+.cart-details{
+    text-align: left;
+}
+
+.cart-details button {
+    background-color: #eee;
+    border: none;
+    padding: 3% 5%;
+}
+
+.cart-details input {
+    border: none;
+    background: #eee;
+    padding: 3% 0 3% 7%;
+    margin: -5px;
+    width: 10%;
+}
+
+.cart-details a {
+    background-color: #fed442;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 3% 7%;
+    margin-left: -2%;
+}
+
+/* End of Product Details CSS*/
+
+/* Product Description CSS*/
+.main-details {
+    padding-top: 15%;
+    float: left;
+    width: 25%;
+    text-align: left;
+    margin-left: 20%;
+    position: relative;
+}
+
+.main-details::after {
+  content: "";
+  clear: both;
+}
+
+.main-details p{
+    position: absolute;
+    top: 150%;
+    text-align: justify;
+    padding: 0 10%
+}
+
+.image-holder-1{
+    padding-top: 15%;
+    float: left;
+}
+
+.top-left {
+    position: absolute;
+    top: 38%;
+    width: 98%;
+    background-color: #f0f0f0;
+    font-size: 25px;
+    padding: 20% 45% 20% 10%;
+    text-align: left;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.container:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
+.button {
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.button a {
+    width: 200px;
+    padding: 12px 48px;
+    text-align: center;
+    color: white;
+    border: solid 2px #fed442;
+    text-decoration: none;
+    background-color: #fed442;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.container:hover .button {
+  opacity: 1;
+  margin: -3% 0% 0% 30%;
+}
+
+/* End of Product Description CSS*/
+
+/* Product Reviews CSS*/
+.reviews-detail {
+    padding-top: 50%;
+    text-align: left;
+    width: 70%;
+    margin-left: 25%;
+}
+.review-container {
+  height: 150px;
+}
+
+.review-container::after {
+  content: "";
+  clear: both;
+}
+
+.review-container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.review-container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+/* Related Products CSS*/
+
+.related-products {
+    padding-top: 50%;
+    width: 70%;
+    margin-left: 25%;
+}
+
+.related-products ul{
+    list-style-type: none;
+}
+
+.related-products ul li{
+    float: left;
+    background-color: #fff;
+    padding: 5% 1%;
+    margin-right: 1%;
+}
+
+.productSlides {display:none;}
+
+.slide-info{ 
+    float:left; 
+    margin-right: 2%;
+    width: 40%;
+    background-color: #fff;
+}
+
+.slide-info img{
+    width: 100%;
+    padding-bottom: 7%;
+}
+
+.slide-info a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    padding-top: 3%;
+    font-size: 20px; 
+}
+
+.price-box-center{
+    text-align: center;
+    padding: 6% 0;
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* End of Related Products CSS*/
+
+/* Footer CSS */
+
+footer{
+    background-color: #fed442;  
+}
+
+.newsletter{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.newsletter h2{
+    padding-top: 6%;
+}
+
+.newsletter input{
+    width: 40%;
+    background: none;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid #9d9d9d;
+}
+
+.footer{
+    border-top: 1px solid #9d9d9d;
+    width: 100vw;
+}
+
+.footer-nav li{
+    float:left;
+    padding: 1% 0 1% 3%;
+    list-style: none;
+}
+
+.footer-nav li:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.footer img{
+    padding: 0 10%;
+}
+
+.social-links{
+    float: right;
+    margin: 1%;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #000;
+}
+
+.social-links a{
+    font-size: 22px;
+}
+
+.social-links:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+/* Footer CSS */
+
+/* MEDIA QUERIES */
+
+/* Tablet */
+@media screen and (max-width: 768px){
+
+header nav li{
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+
+header h1.logo{
+    float: none;
+    margin: 0 auto 15px;
+}
+
+header nav{
+    width: 100%;
+    margin-top: -6%;
+    padding-bottom: 2%;
+}
+
+header .wrapper{
+    padding: 0;
+    width: 100%;
+}
+
+header{
+    padding-bottom: 0;
+}
+
+header nav li a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: #999;
+    border-top: 1px solid #4f4f4f;
+}
+
+#burger-nav{
+    width: 100%;
+    height: 40px;
+    background: url(images/burger.png) no-repeat 98% center;
+    cursor: pointer;
+}
+
+img{
+    width: 60vw;
+}
+
+header nav ul{
+    height: 0;
+    overflow: hidden;
+}
+
+header nav ul.open{
+    height: auto;
+}
+.product-tabs ul .active {
+    background-color: #fed442;
+    padding: 12% 34%;
+}
+
+.product-tabs ul li:hover {
+    background-color: #fed442;
+}
+
+section{
+    margin-left: -10%;
+}
+
+.image-holder{ width:45%; }
+.product-details{ 
+    width: 31%;
+    padding: 5% 2%;
+}
+
+.main-details{
+    padding-top: 5%;
+}
+
+.image-holder-1 {
+    padding-top: 5%;
+    margin-left: 45%;
+}
+
+.top-left{
+    width: 135%;
+}
+
+.main-details p{
+    top: 420%;
+    padding: 0 5%;
+    font-size: 12px;
+}
+
+.reviews-detail {
+    padding-top: 25%;
+    width: 90%;
+}
+
+.related-products{
+    width: 80%;
+    padding-top: 0;
+}
+
+footer{
+    margin-top: -45%;
+}
+
+.wrapper{
+    padding-bottom: 10%;
+}
+
+}
+/* End of Tablet*/
+
+/* Both */
+@media screen and (max-width: 780px){
+
+.main-header{ display: none; }
+.additional-links{ display: none; }
+.breadcrumb{ display: none; }
+.additional-sidebar{ display: none; }
+.product-tabs { 
+    width: 100%;
+    margin: 0;
+    background: #fff;
+    position: unset;
+}
+.product-tabs ul { text-align: center; }
+.product-tabs ul li {
+    margin: 0;
+    float: left;
+    width: 25%;
+    padding: 3% 0;
+}
+.product-tabs ul li:last-child {
+    display: none;
+}
+.product-tabs ul li a:hover {
+    background-color: #fed442;
+}
+.footer img {
+    width: 10vw;
+}
+
+}
+
+/* Mobile*/
+@media screen and (max-width: 480px){
+
+header nav li{
+    float: none;
+    width: 100%;
+    margin: 0;
+}
+
+header nav{
+    width: 100%;
+    margin-top: -18%;
+    padding-bottom: 5%;
+}
+
+header .wrapper{
+    padding: 0;
+    width: 100%;
+
+}
+
+header{
+    padding-bottom: 0;
+}
+
+header nav li a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: #999;
+    border-top: 1px solid #4f4f4f
+}
+
+#burger-nav{
+    width: 100%;
+    height: 40px;
+    background: url(images/burger.png) no-repeat 98% center;
+    cursor: pointer;
+}
+
+header nav ul{
+    height: 0;
+    overflow: hidden;
+}
+
+header nav ul.open{
+    height: auto;
+}
+
+a:hover, .current{
+    background-size: 100% 20%;
+}
+
+.product-tabs ul li a {
+    font-size: 12px;
+    padding: 15% 20%;
+
+}
+
+.product-tabs ul .active {
+    background-color: #fed442;
+}
+
+section{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.image-holder{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 90%;
+    padding: 0 5%;
+}
+
+.product-details{
+    width: 95%;
+}
+
+.main-details {
+    width: 80vw;
+    margin: 0;
+    padding: 0;
+    position: unset;
+    padding: 0 10%;
+}
+
+.top-left{
+    position: unset;
+    top: 0;
+    padding: 0;
+    width: 100%
+}
+
+.main-details p{
+    position: unset;
+    top: 0;
+}
+.image-holder-1 {
+    padding: 0;
+    margin-left: 15%;
+}
+
+.container .button {
+    display: none;
+}
+
+.reviews-detail {
+    margin: 170% 0 0 5%;
+    width: 90%;
+    padding: 0;
+}
+
+.related-products {
+    padding-top: 0;
+    width: 100%;
+    margin: -25% 0 0 0;
+}
+
+.slide-info a{
+    font-size: 16px;
+}
+
+footer{
+    margin-top: -70%;
+    padding: 21% 0;
+}
+
+.newsletter {
+    margin-bottom: 25%;
+}
+
+.footer img {
+    padding: 5% 45%;
+}
+
+.social-links {
+    float: none;
+}
+
+.social-links .additional-links {
+    display: block;
+    text-align: center;
+    width: 15%;
+    float: left;
+    margin-left: 10%;
+}
+
+}
+
+/* Additonal*/
+
+@media only screen and (max-width: 1260px) and (min-width: 769px){
+.additional-sidebar section h1 {
+    margin: 0;
+}
+.product-tabs{
+    margin: 0;
+}
+section{
+    margin-left: 1%;
+}
+.image-holder {
+    margin-left: 12%;
+}
+img {
+    width: 40vw;
+}
+.main-details {
+    padding-top: 10%;
+}
+.image-holder-1 {
+    padding-top: 10%;
+}
+.container:hover .button {
+    margin: -3% 0% 0% 21%;
+}
+.reviews-detail {
+    padding-top: 20%;
+}
+.related-products {
+    padding-top: 10%;
+}
+
+.footer img {
+    width: 4vw;
+}
+
+}
